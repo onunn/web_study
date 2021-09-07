@@ -2,30 +2,18 @@
     property: value;
 } */
 
-* {
-  color: green;
+body {
+  background-color: beige;
 }
 
-li {
-  color: blue;
+h1 {
+  color: cornflowerblue;
 }
 
-#Special {
-  color: pink;
+.active {
+  color: tomato;
 }
 
-.red {
-  background-color: yellow;
-  width: 100px;
-  height: 100px;
-
-  padding: 20px;
-  margin: 20px;
-}
-
-button:hover {
-  color: red;
-}
-a[href] {
-  colore: purple;
+.sexy-font {
+  font-size: large;
 }
