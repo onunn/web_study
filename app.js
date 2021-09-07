@@ -9,6 +9,7 @@ function handleTitleClick() {
         newColor = 'tomato'
     } else {
         newColor = 'blue';
+    }
     h1.style.color = newColor;
 }
 
