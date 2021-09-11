@@ -12,6 +12,7 @@ const loginButton = document.querySelector('.login-form button');
 const greeting = document.querySelector('.greeting');
 
 const link = document.querySelector('a');
+
 const HIDDEN_CLASSNAME = 'hidden';
 const USERNAME_KEY =    'username';
 

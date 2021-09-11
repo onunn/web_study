@@ -1,4 +1,4 @@
-const clock = document.querySelector('.clock');
+const clock = document.querySelector('.clock h2');
 
 function getClock() {
     const date = new Date();
