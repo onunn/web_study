@@ -38,8 +38,12 @@ function saveToDos(){
 
 function paintToDo(newToDoObj){
     const li = document.createElement('li');
+    const checkBox = document.createElement('input');
     const span = document.createElement('span');
+
     li.id = newToDoObj.id;
+    checkBox.type = 'checkbox';
+    checkBox.addEventListener('change', handleCheckBox);
 
     span.innerText = newToDoObj.text;
 
@@ -49,15 +53,27 @@ function paintToDo(newToDoObj){
     button.addEventListener('click', deleteToDo);
 
     li.appendChild(span);
+    li.appendChild(checkBox)
     li.appendChild(button);
+
     toDoList.appendChild(li);
+    console.dir(checkBox);
 }
 
 function handleToDos(item){
     paintToDo(item);
 }
 
+function handleCheckBox(event){
+    const li = event.target.parentElement;
+    const span = li.querySelector('span');
+
+    span.classList.toggle('changed-span');
+}
+
 toDoForm.addEventListener('submit', handleToDoSubmit);
+
+
 
 const savedToDos = localStorage.getItem('TODOS_KEY');
 

@@ -2,19 +2,94 @@
   display: none;
 }
 
+html {
+  height: 100vh;
+}
 body {
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.view-port {
-  /* position: relative; */
-  /* display: flex; */
-  /* justify-content: center; */
+.login-flex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.clock h2 {
-  /* margin-left: 200px; */
+.todo-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.todo-form > input,
+.login-form > input:nth-child(1) {
+  background: transparent;
+  border: none;
+  border-bottom: solid 2px white;
+  padding: 20px 0px 5px 0px;
+  font-size: 14pt;
+  width: 50%;
+
+  text-align: center;
+  text-decoration-color: white;
+  color: white;
+  font-weight: bolder;
+}
+
+.todo-form > input:focus,
+.login-form > input:nth-child(1):focus {
+  outline: none;
+  /* border-bottom: solid 2px white; */
+}
+
+.view-port {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* .footer {
+  padding: 10px 0px;
+} */
+
+.clock p {
+  font-size: 100px;
+  font-weight: bold;
+  color: white;
+  margin: 10px 0;
+  padding: 200px 0 0 0;
+}
+
+.quote {
+  font-weight: bold;
+  color: white;
+  margin: 10px 0px;
+}
+
+.weather {
+  font-weight: bold;
+  color: white;
+  margin: 10px 20px;
+  align-self: flex-end;
+}
+
+.greeting {
+  font-weight: bold;
+  color: white;
+  font-size: 40px;
+}
+
+.todo-list {
+  font-weight: bold;
+  color: white;
+}
+
+.changed-span {
+  text-decoration: line-through;
 }

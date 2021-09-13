@@ -14,7 +14,8 @@ const greeting = document.querySelector('.greeting');
 const link = document.querySelector('a');
 
 const HIDDEN_CLASSNAME = 'hidden';
-const USERNAME_KEY =    'username';
+const USERNAME_KEY = 'username';
+const LOGIN_FLEX_CLASSNAME = 'login-flex';
 
 function onLoginSubmit(event) {
     event.preventDefault();
@@ -25,6 +26,7 @@ function onLoginSubmit(event) {
 
     //greeting.innerText = 'Hello ' + username;
     paintGreetings(username)
+    loginForm.classList.remove(LOGIN_FLEX_CLASSNAME);
 }
 
 
@@ -42,4 +44,5 @@ if(savedUsername === null){
     loginForm.classList.remove(HIDDEN_CLASSNAME);
 } else {
     paintGreetings(savedUsername);
+    loginForm.classList.remove(LOGIN_FLEX_CLASSNAME);
 }

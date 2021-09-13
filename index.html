@@ -9,13 +9,19 @@
     </head>
     <body>
         <div class='view-port'>
+
+            <div class="weather">
+                <span></span>
+                <span></span>
+            </div>
+
             <div class='clock'>
-                <h2> 00:00 </h2>
+                <p> 00:00 </p>
             </div>
     
-            <h1 class="greeting hidden"></h1>
+            <div class="greeting hidden"></div>
     
-            <form class="login-form hidden">
+            <form class="login-form hidden login-flex">
                 <!-- 사용한 class name을 다시 사용하면 안됨! -->
                 <input required maxlength='15' type="text" placeholder="What is your name?" />
                 <input type="submit" value="Log In"> 
@@ -26,18 +32,18 @@
             </form>
     
             <ul class="todo-list">
-    
             </ul>
     
-            <div class="quote">
-                <span></span>
-                <span></span>
-            </div>
-            <div class="weather">
-                <span></span>
-                <span></span>
+
+            <div class="footer">
+                <div class="quote">
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
+
+
 
 
         <script src="js/greeting.js"></script>
